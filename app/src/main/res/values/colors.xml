@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <!-- Colout Pallete -->
+    <color name="Primarywhite">#FFFFFF</color>
+    <color name="Primaryblack">#000000</color>
+    <color name="Primaryyellow">#FDE82A</color>
+    <color name="Primarygreen">#02BE14</color>
+
+    <!-- Additional colours -->
+    <color name="darkblue">#467AFF</color>
+    <color name="lightblue">#08F8F8</color>
+    <color name="pink">#FF00E5</color>
+    <color name="skyblue">#73CDFF</color>
+    <color name="yellow">#FCFF77</color>
+    <color name="navyblue">#7C88FA</color>
+    <color name="green">#00FF19</color>
+    <color name="red">#E92424</color>
+    <color name="grey">#C0B8B8</color>
+    <color name="lightpink">#F1C3C3</color>
 </resources>
