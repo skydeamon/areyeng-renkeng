@@ -1,17 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#FFFFFF"
+    tools:actionBarNavMode="list">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size" />
+
+
+    <menu xmlns:android="https://schemas.android.com/apk/res/android"
+        xmlns:app="https://schemas.android.com/apk/res-auto"
+        xmlns:tools="https://schemas.android.com/tools" tools:context=".MainActivity">
+
+        <item
+            android:id="@+id/action_refresh"
+            android:icon="@drawable/ic_action_refresh"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:title="Refresh" />
+
+        <item
+            android:id="@+id/action_settings"
+            android:title="Settings"></item>
+
+    </menu>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="#fff"
+        android:elevation="2dp"
+        android:iconifiedByDefault="true"
+        android:queryHint="Search destination"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"></SearchView>
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="0dp"
-        android:layout_height="523dp"
+        android:layout_width="414dp"
+        android:layout_height="483dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Welcome"
+        android:textColor="#020202"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Name Surname"
+        android:textColor="@color/Primaryorange"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
