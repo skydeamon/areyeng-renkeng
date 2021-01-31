@@ -3,8 +3,8 @@
     <!-- Colout Pallete -->
     <color name="Primarywhite">#FFFFFF</color>
     <color name="Primaryblack">#000000</color>
-    <color name="Primaryyellow">#FDE82A</color>
-    <color name="Primarygreen">#02BE14</color>
+    <color name="Primaryorange">#F47B20</color>
+    <color name="Primarygrey">#2E3131</color>
 
     <!-- Additional colours -->
     <color name="darkblue">#467AFF</color>
