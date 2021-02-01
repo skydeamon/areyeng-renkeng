@@ -5,6 +5,7 @@ import android.widget.SearchView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 
 public class HomeActivity extends AppCompatActivity {
@@ -18,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         searchView = (SearchView) findViewById(R.id.searchView);
-
+        MapView mapView = (MapView) findViewById(R.id.mapView);
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap nMap) {
@@ -27,8 +28,6 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-
-
             @Override
             public boolean onQueryTextSubmit(String query) {
                 Toast.makeText(getBaseContext(), query, Toast.LENGTH_LONG).show();
