@@ -7,6 +7,7 @@
     <color name="Primarygrey">#2E3131</color>
 
     <!-- Additional colours -->
+    <color name="lightorange">#f49e20</color>
     <color name="darkblue">#467AFF</color>
     <color name="lightblue">#08F8F8</color>
     <color name="pink">#FF00E5</color>
