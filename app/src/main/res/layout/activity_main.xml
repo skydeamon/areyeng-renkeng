@@ -43,7 +43,7 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/Primaryblack"
         android:text="Name and Surname"
-        android:textColor="@color/Primaryyellow"
+        android:textColor="@color/Primaryorange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -55,7 +55,7 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/Primaryblack"
         android:text="Name and Surname"
-        android:textColor="@color/Primaryyellow"
+        android:textColor="@color/Primaryorange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
