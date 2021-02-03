@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartUpPage"></activity>
+        <activity
+            android:name=".LandingPage"
+            android:label="@string/title_activity_landing_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".GetStartedPage" />
         <activity android:name=".TaxiOptions" />
         <activity android:name=".LaunchPage" />
