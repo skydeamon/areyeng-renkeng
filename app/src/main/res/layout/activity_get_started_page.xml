@@ -25,7 +25,7 @@
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="457dp"
         app:srcCompat="@drawable/logo_large" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

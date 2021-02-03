@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".MapsAndNav"
+            android:label="@string/title_activity_maps_and_nav"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".LandingPage"
             android:label="@string/title_activity_landing_page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".GetStartedPage" />
         <activity android:name=".TaxiOptions" />
         <activity android:name=".LaunchPage" />
