@@ -54,7 +54,7 @@ public class LocationTurnOnActivity extends AppCompatActivity implements View.On
     }
 
     private void launchHomeActivity(Boolean locationReply){
-        Intent intent = new Intent(getBaseContext(), HomeActivity.class);
+        Intent intent = new Intent(getBaseContext(), StartActivity.class);
         intent.putExtra("location_reply", locationReply);
         startActivity(intent);
     }

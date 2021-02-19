@@ -30,16 +30,9 @@ public class StartFragment extends Fragment implements GoogleMap.OnMyLocationBut
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        startViewModel =
-                new ViewModelProvider(this).get(StartViewModel.class);
+        startViewModel = new ViewModelProvider(this).get(StartViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        startViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         searchView = (SearchView) root.findViewById(R.id.searchView);
         MapView mapView = (MapView) root.findViewById(R.id.mapView);
         mapView.getMapAsync(new OnMapReadyCallback() {
@@ -49,7 +42,7 @@ public class StartFragment extends Fragment implements GoogleMap.OnMyLocationBut
             }
         });
 
-        if (CheckLocationPermission.isGranted(this)) {
+        if (CheckLocationPermission.isGranted(root.getContext())) {
             gMap.setMyLocationEnabled(true);
             gMap.setOnMyLocationButtonClickListener(this);
         }
@@ -87,6 +80,4 @@ public class StartFragment extends Fragment implements GoogleMap.OnMyLocationBut
     public boolean onMyLocationButtonClick() {
         return false;
     }
-}
-
 }

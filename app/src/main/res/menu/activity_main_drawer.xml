@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_profile"
             android:enabled="true"
-            android:icon="@mipmap/alerttriangle"
+            android:icon="@drawable/ic_menu_slideshow"
             android:title="Profile" />
         <item
             android:id="@+id/nav_privacy"
@@ -20,7 +20,7 @@
         <item
             android:id="@+id/nav_contribute"
             android:enabled="true"
-            android:icon="@mipmap/alerttriangle"
+            android:icon="@drawable/ic_menu_slideshow"
             android:title="Contribute" />
         <item
             android:id="@+id/nav_invite"
@@ -37,7 +37,7 @@
         <item
             android:id="@+id/nav_report"
             android:enabled="true"
-            android:icon="@mipmap/alerttriangle"
+            android:icon="@drawable/ic_menu_slideshow"
             android:title="Report" />
         <item
             android:id="@+id/nav_legal"
